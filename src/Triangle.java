@@ -9,7 +9,7 @@ public class Triangle extends Figure {
     @Override
     double sToFind() {
         poluPerimetr = (sideA + sideB + sideC) / 2;
-        s = poluPerimetr * (poluPerimetr - sideA) * (poluPerimetr - sideB) * (poluPerimetr - sideC);
+        s = Math.sqrt(poluPerimetr * (poluPerimetr - sideA) * (poluPerimetr - sideB) * (poluPerimetr - sideC));
         return s;
     }
 
